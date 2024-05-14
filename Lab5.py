@@ -443,13 +443,13 @@ def bfsWrapper(matrix, componentsStrongConnectivity, layer):
     bfsLayer.clear()
     dfsLayer.clear()
     for component in componentsStrongConnectivity:
-          bfs(dirMatrix, component, layer)
+          bfs(matrix, component, layer)
 
 def dfsWrapper(matrix, componentsStrongConnectivity, layer):
     bfsLayer.clear()
     dfsLayer.clear()
     for component in componentsStrongConnectivity:
-        dfs(dirMatrix, component, layer)
+        dfs(matrix, component, layer)
 
 class Button:
     def __init__(self, x, y, width, height, label, function, fontSize=12, color="white"):
